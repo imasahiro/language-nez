@@ -235,7 +235,7 @@ Constructor
    = { ('{@' S #LeftNew / '{$' (@Label)? #LabelNew / '{' #New ) _ (@Expression)? '}' } _
 
 Tagging
-	= '#' { LETTER W* #Tagging } _
+	= '#' { [A-Z_a-z$]+ W* #Tagging } _
 
 Replace
    = '`' { ('\\`' / '\\\\' / ![`\n\r] .)* #Replace } '`' _
